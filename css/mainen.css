@@ -1,0 +1,213 @@
+.top-bar a.Phone {
+  padding: 0 19px 0 24px;
+}
+.top-bar a.Phone i {
+  transform: rotate(0deg);
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+@media (max-width: 577px) {
+  .sec-bar .menu {
+    right: auto;
+    left: 15px;
+  }
+}
+.sec-bar .cart .txt {
+  font-size: 13px;
+  margin-left: 5px;
+  margin-right: 0;
+}
+@media (max-width: 991px) {
+  .sec-bar .cart .txt {
+    display: none;
+  }
+}
+.sec-bar .cart .count {
+  left: -5px;
+  right: auto;
+}
+
+.sec-bar .search {
+  width: 700px;
+  height: 48px;
+  margin: 0 33px 0 52px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sec-bar .search {
+    width: 515px;
+    margin: 0;
+  }
+}
+@media (max-width: 577px) {
+  .sec-bar .search {
+    width: 100%;
+    margin: 0;
+  }
+}
+.sec-bar .search-input {
+  padding: 0 50px 0 30px;
+}
+
+.search-btn {
+  right: 25px;
+  left: auto;
+}
+
+.product {
+  margin-right: 21px;
+  margin-left: 0;
+}
+@media (max-width: 1199px) {
+  .product {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 577px) {
+  .product {
+    margin-left: 0;
+    margin-right: 25px;
+  }
+}
+@media (max-width: 479px) {
+  .product {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .product:nth-child(6n) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .product:nth-child(6n) {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 577px) {
+  .product:nth-child(6n) {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .product:nth-child(5n) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .product:nth-child(5n) {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 577px) {
+  .product:nth-child(5n) {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 577px) {
+  .product:nth-child(2n) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.product .sale {
+  right: auto;
+  left: 9px;
+}
+.product .product-price .old-price {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.link-li {
+  margin-left: 0;
+  margin-right: 26px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .link-li {
+    margin-right: 17px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 991px) {
+  .link-li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.link-li:last-child {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.copy .copyrights a {
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+.accordion:after {
+  margin-right: 5px;
+  margin-left: 0;
+  float: right;
+}
+
+.main-xs-nav {
+  right: auto;
+  left: 0;
+}
+.main-xs-nav .links {
+  padding-right: 0;
+  padding-left: 25px;
+}
+.main-xs-nav .closebtn {
+  left: auto;
+  margin-left: 0;
+  right: 0px;
+  margin-right: 25px;
+}
+.main-xs-nav a.Phone {
+  padding: 0 19px 0 24px;
+}
+.main-xs-nav a.Phone i {
+  transform: rotate(0);
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+@keyframes inscreen {
+  0% {
+    left: -100%;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+  }
+}
+.inscreen {
+  animation: inscreen 0.4s ease forwards;
+}
+
+@keyframes outscreen {
+  0% {
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: -100%;
+    right: auto;
+  }
+}
+.outscreen {
+  animation: outscreen 0.5s ease forwards;
+}
+
+/*# sourceMappingURL=mainen.css.map */

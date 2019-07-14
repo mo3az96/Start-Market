@@ -1,0 +1,207 @@
+.new {
+    margin-top: 30px;
+
+    h1 {
+        font-size: 20px;
+        font-family: roman-bold;
+        color: $maincolor;
+        margin: 0;
+        margin-bottom: 17px;
+
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+    }
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 991px) {
+        justify-content: center;
+    }
+}
+
+.product {
+    border: 1px solid #e6e6e6;
+    width: 172px;
+    min-height: 277px;
+    border-radius: 25px;
+    padding: 30px 15px 0;
+    overflow: hidden;
+    margin-bottom: 19px;
+    margin-left: 21px;
+    position: relative;
+
+
+
+    @media (max-width: 1199px) {
+        margin-left: 20px;
+    }
+
+
+
+    @media (max-width: 577px) {
+        margin-left: 25px;
+        width: 172px;
+    }
+
+    @media (max-width: 479px) {
+        margin-left: 10px;
+        width: 140px;
+    }
+
+    &:nth-child(6n) {
+        @media (min-width: 1200px) {
+            margin-left: 0;
+        }
+
+        @media (max-width: 1199px) {
+            margin-left: 20px;
+        }
+
+        @media (max-width: 577px) {
+            margin-left: 10px;
+        }
+    }
+
+    &:nth-child(5n) {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            margin-left: 0;
+        }
+
+        @media (max-width: 991px) {
+            margin-left: 20px;
+        }
+
+        @media (max-width: 577px) {
+            margin-left: 10px;
+        }
+    }
+
+    &:nth-child(2n) {
+        @media (max-width: 577px) {
+            margin-left: 0;
+        }
+    }
+
+
+    .sale {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 9px;
+        right: 9px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #9dcc42;
+        font-size: 12px;
+        font-family: roman-bold;
+        color: #fff;
+    }
+
+    .info {
+        display: block;
+        text-align: center;
+
+        &:hover {
+            .product-img {
+                transform: translateY(-20px);
+            }
+
+            .product-name {
+                color: $seccolor;
+            }
+        }
+    }
+
+    .product-img {
+        margin: auto;
+        max-height: 120px;
+        @include transition(all 0.5s ease-in-out);
+    }
+
+    .product-name {
+        margin: 25px 0 6px;
+        font-size: 15px;
+        color: $maincolor;
+        @include transition(all 0.5s ease-in-out);
+    }
+
+    .product-price {
+        font-family: roman-bold;
+        direction: ltr;
+        display: block;
+        color: $maincolor;
+
+        .old-price {
+            margin-left: 10px;
+            text-decoration: line-through;
+            color: #a3a2a2;
+            font-family: roman;
+        }
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #e6e6e6;
+        margin-top: 13px;
+        padding-top: 5px;
+
+        a {
+            margin: 0 12px;
+            color: $maincolor;
+            font-size: 15px;
+            @include transition(all 0.3s ease-in-out);
+            position: relative;
+
+            &:hover {
+                color: $seccolor;
+
+                .icon-info {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .icon-info {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 105px;
+        height: 20px;
+        z-index: 55;
+        position: absolute;
+        font-size: 12px;
+        font-family: roman-bold;
+        top: -22px;
+        display: flex;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 25px;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all 0.3s ease-in-out);
+
+        &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            display: block;
+            border-width: 4px;
+            border-color: rgba(0, 0, 0, 0.8) transparent transparent;
+            border-style: solid;
+            bottom: -8px;
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+}

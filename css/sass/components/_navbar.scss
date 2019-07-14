@@ -1,0 +1,94 @@
+.xs-nav {
+    background-color: rgba($maincolor, 0.4);
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    display: none;
+}
+
+.main-xs-nav {
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    background-color: #fff;
+
+    top: 0;
+    right: 0;
+    z-index: 11;
+    padding-top: 70px;
+
+    .links {
+        padding-right: 25px;
+    }
+
+    .link-li {
+        margin-bottom: 15px;
+    }
+
+    .link {
+        font-size: 16px;
+
+        color: $maincolor;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+            background-color: transparent;
+        }
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 25px;
+        font-size: 15px;
+        cursor: pointer;
+        left: 0px;
+        margin-left: 25px;
+    }
+
+    a {
+        color: #a0a0a0;
+        font-size: 14px;
+        @include transition(all 0.3s ease-in-out);
+
+        &.Phone {
+            margin: 0 20px;
+            background-color: #f3f3f3;
+            padding: 0 24px 0 19px;
+            border-radius: 25px;
+            color: #b3b3b3;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            @extend %btnhover;
+
+            &:before {
+                background: $seccolor;
+            }
+
+            &:hover {
+                border-color: $seccolor;
+                color: #fff;
+
+                &:before {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+            }
+
+            i {
+                transform: rotate(90deg);
+                margin-right: 5px;
+            }
+        }
+
+        &:hover {
+            color: $seccolor;
+        }
+    }
+
+}
