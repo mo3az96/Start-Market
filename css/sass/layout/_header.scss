@@ -133,6 +133,7 @@
             font-family: roman-bold;
             font-size: 14px;
             margin-right: 5px;
+            @include transition(all 0.3s ease-in-out);
 
             @media (max-width: 991px) {
                 display: none;
@@ -155,14 +156,12 @@
         }
 
         &:hover {
-            i {
-                color: $seccolor;
-            }
 
-            .txt {
-                color: $maincolor;
+            color: $seccolor;
 
-            }
+            color: $seccolor;
+
+
 
             .count {
                 animation: vibe 0.7s;

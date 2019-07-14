@@ -27,13 +27,13 @@ $(document).ready(function () {
     });
 
 
-    var categsSwiper = new Swiper("#mainSlider", {
-        slidesPerView: "auto",
-        // spaceBetween: 5,
-        autoplay: {
-            delay: 2000
-        }
+    //swiper
+
+    var categsSwiper = new Swiper('#catslider', {
+        slidesPerView: 'auto',
     });
+
+    //swiper
 
     if ($(window).width() < 992) {
         $(".linksheading").addClass("accordion");

@@ -253,6 +253,10 @@ a:active {
   font-family: roman-bold;
   font-size: 14px;
   margin-right: 5px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 991px) {
   .sec-bar .cart .txt {
@@ -273,11 +277,9 @@ a:active {
   font-size: 11px;
   color: #fff;
 }
-.sec-bar .cart:hover i {
+.sec-bar .cart:hover {
   color: #f65456;
-}
-.sec-bar .cart:hover .txt {
-  color: #565b6e;
+  color: #f65456;
 }
 .sec-bar .cart:hover .count {
   animation: vibe 0.7s;
@@ -536,6 +538,7 @@ a:active {
   margin: 0;
   margin-top: 10px;
   display: block;
+  text-align: center;
 }
 
 .main-slider {
