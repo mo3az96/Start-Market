@@ -73,6 +73,10 @@
         font-size: 15px;
         font-family: roman-bold;
         margin: 35px 0 14px;
+
+        @media (max-width: 991px) {
+            margin: 15px 0 14px;
+        }
     }
 
     .download {

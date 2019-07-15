@@ -371,6 +371,11 @@ a:active {
   font-family: roman-bold;
   margin: 35px 0 14px;
 }
+@media (max-width: 991px) {
+  .apps .heading {
+    margin: 15px 0 14px;
+  }
+}
 .apps .download {
   display: flex;
   justify-content: center;
