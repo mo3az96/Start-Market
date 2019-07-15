@@ -180,13 +180,31 @@
     }
 }
 
-.accordion {
+.foot {
+    .accordion {
 
-    &:after {
-        margin-right: 5px;
-        margin-left: 0;
-        float: right;
+        &:after {
+            margin-right: 5px;
+            margin-left: 0;
+            float: right;
+        }
     }
+}
+
+.xs-nav {
+
+    .accordion {
+        &:after {
+            margin-right: 25px;
+
+            float: right;
+        }
+    }
+
+    .panel {
+        width: 100%;
+    }
+
 }
 
 .main-xs-nav {

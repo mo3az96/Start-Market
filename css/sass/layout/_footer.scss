@@ -93,6 +93,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        padding: 10px 0;
     }
 
     .copyrights {
@@ -101,10 +102,25 @@
         display: flex;
         align-items: center;
 
+        .tasawk {
+            @media(max-width: 767px) {
+                display: block;
+            }
+        }
 
+        @media(max-width: 767px) {
+            order: 2;
+            line-height: 2;
+        }
 
         a {
             margin-right: 6px;
+        }
+    }
+
+    .payments {
+        @media(max-width: 767px) {
+            order: 1;
         }
     }
 }

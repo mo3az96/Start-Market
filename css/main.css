@@ -216,6 +216,9 @@ a:active {
     display: flex;
     margin: 40px 0 25px;
   }
+  .sec-bar .logo img {
+    width: 250px;
+  }
 }
 .sec-bar .logo .cart {
   display: none;
@@ -385,6 +388,7 @@ a:active {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 10px 0;
   }
 }
 .copy .copyrights {
@@ -393,8 +397,24 @@ a:active {
   display: flex;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .copy .copyrights .tasawk {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .copy .copyrights {
+    order: 2;
+    line-height: 2;
+  }
+}
 .copy .copyrights a {
   margin-right: 6px;
+}
+@media (max-width: 767px) {
+  .copy .payments {
+    order: 1;
+  }
 }
 
 .xs-nav {
@@ -434,6 +454,9 @@ a:active {
 .main-xs-nav .link:hover {
   color: #f65456;
   background-color: transparent;
+}
+.main-xs-nav .droplinks li {
+  margin-top: 8px;
 }
 .main-xs-nav .closebtn {
   position: absolute;
@@ -487,7 +510,7 @@ a:active {
 }
 @media (max-width: 767px) {
   .catslider {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 }
 .catslider .catswipe {
@@ -608,23 +631,49 @@ a:active {
   }
 }
 
-.accordion {
+.xs-nav .accordion {
   cursor: pointer;
   width: 100%;
   transition: 0.5s;
 }
-.accordion:after {
+.xs-nav .accordion:after {
+  content: "+";
+  color: #565b6e;
+  margin-left: 25px;
+  font-size: 18px;
+  float: left;
+}
+.xs-nav .accordion.active:after {
+  content: "−";
+}
+.xs-nav .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.foot .accordion {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.5s;
+}
+.foot .accordion:after {
   content: "+";
   color: #565b6e;
   margin-left: 5px;
   font-size: 18px;
   float: left;
 }
-.accordion.active:after {
+.foot .accordion.active:after {
   content: "−";
 }
-
-.panel {
+.foot .panel {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
