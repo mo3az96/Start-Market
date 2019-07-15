@@ -1,6 +1,10 @@
 .catslider {
     margin-bottom: 35px;
 
+    @media(max-width: 767px) {
+        margin-bottom: 15px;
+    }
+
     .catswipe {
         display: flex;
         flex-direction: column;

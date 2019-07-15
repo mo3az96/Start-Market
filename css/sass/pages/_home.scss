@@ -119,6 +119,12 @@
         margin: auto;
         max-height: 120px;
         @include transition(all 0.5s ease-in-out);
+
+        @media(max-width: 767px) {
+            height: 120px;
+            max-height: 120px;
+        }
+
     }
 
     .product-name {
