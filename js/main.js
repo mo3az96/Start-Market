@@ -12,8 +12,14 @@ $(document).ready(function () {
         $('.main-xs-nav').removeClass('inscreen');
         $('body').css("overflow", "auto");
     });
-    $(".links").click(function (e) {
+    $(".main-xs-nav").click(function (e) {
         e.stopPropagation();
+    });
+    $('.closebtn').click(function () {
+        $('.xs-nav').fadeOut(500);
+        $('.main-xs-nav').addClass('outscreen');
+        $('.main-xs-nav').removeClass('inscreen');
+        $('body').css("overflow", "auto");
     });
 
     // Main Slider
