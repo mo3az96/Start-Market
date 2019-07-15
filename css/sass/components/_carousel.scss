@@ -89,6 +89,15 @@
         left: 50%;
         transform: translatex(-50%);
 
+        @media (max-width: 991px) {
+            bottom: 10px;
+        }
+
+        @media (max-width: 577px) {
+            bottom: 5px;
+        }
+
+
         .owl-dot {
             span {
                 margin: 0 4px;

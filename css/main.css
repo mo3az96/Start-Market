@@ -552,6 +552,16 @@ a:active {
   left: 50%;
   transform: translatex(-50%);
 }
+@media (max-width: 991px) {
+  .main-slider .owl-dots {
+    bottom: 10px;
+  }
+}
+@media (max-width: 577px) {
+  .main-slider .owl-dots {
+    bottom: 5px;
+  }
+}
 .main-slider .owl-dots .owl-dot span {
   margin: 0 4px;
   width: 8px;
