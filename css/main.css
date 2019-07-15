@@ -778,7 +778,7 @@ a:active {
   text-align: center;
 }
 .product .info:hover .product-img {
-  transform: translateY(-20px);
+  transform: scale(1.2);
 }
 .product .info:hover .product-name {
   color: #f65456;
