@@ -291,6 +291,12 @@ a:active {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 }
+@media (max-width: 767px) {
+  .foot {
+    margin-top: 20px;
+    padding: 20px 0 25px;
+  }
+}
 
 .links .linksheading {
   color: #565b6e;
@@ -381,8 +387,6 @@ a:active {
 .copy .copyrights {
   color: #565b6e;
   font-size: 12px;
-}
-.copy .copyrights span {
   display: flex;
   align-items: center;
 }
