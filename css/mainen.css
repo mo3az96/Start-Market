@@ -153,12 +153,6 @@
   margin-right: 0;
 }
 
-.foot .accordion:after {
-  margin-right: 5px;
-  margin-left: 0;
-  float: right;
-}
-
 .xs-nav .accordion:after {
   margin-right: 25px;
   float: right;
@@ -180,6 +174,14 @@
   margin-left: 0;
   right: 0px;
   margin-right: 25px;
+}
+.main-xs-nav .lang {
+  left: 0px;
+  right: auto;
+  margin-left: 25px;
+  margin-right: 0;
+  line-height: 21px;
+  align-items: flex-start;
 }
 .main-xs-nav a.Phone {
   padding: 0 19px 0 24px;

@@ -40,13 +40,16 @@
         cursor: pointer;
         width: 100%;
         transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 22px;
 
         &:after {
             content: '\002B';
             color: $maincolor;
-            margin-left: 5px;
+            margin: 0 10px;
             font-size: 18px;
-            float: left;
         }
 
         &.active {

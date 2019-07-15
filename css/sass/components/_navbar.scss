@@ -42,6 +42,10 @@
     .droplinks {
         li {
             margin-top: 8px;
+
+            a {
+                color: #888888
+            }
         }
     }
 
@@ -52,49 +56,61 @@
         cursor: pointer;
         left: 0px;
         margin-left: 25px;
+        color: #a4a4a4
     }
 
-    a {
-        color: #a0a0a0;
+    .lang {
+        width: 30px;
+        height: 30px;
         font-size: 14px;
-        @include transition(all 0.3s ease-in-out);
+        font-family: roman-bold;
+        background-color: $maincolor;
+        color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
-        &.Phone {
-            margin: 0 20px;
-            background-color: #f3f3f3;
-            padding: 0 24px 0 19px;
-            border-radius: 25px;
-            color: #b3b3b3;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 30px;
-            @extend %btnhover;
 
-            &:before {
-                background: $seccolor;
-            }
 
-            &:hover {
-                border-color: $seccolor;
-                color: #fff;
+.Phone {
+    color: #a0a0a0;
+    font-size: 14px;
+    @include transition(all 0.3s ease-in-out);
+    margin: 0 20px;
+    background-color: #f3f3f3;
+    padding: 0 24px 0 19px;
+    border-radius: 25px;
+    color: #b3b3b3;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    @extend %btnhover;
 
-                &:before {
-                    -webkit-transform: scale(1);
-                    transform: scale(1);
-                }
-            }
+    &:before {
+        background: $seccolor;
+    }
 
-            i {
-                transform: rotate(90deg);
-                margin-right: 5px;
-            }
-        }
+    &:hover {
+        border-color: $seccolor;
+        color: #fff;
 
-        &:hover {
-            color: $seccolor;
+        &:before {
+            -webkit-transform: scale(1);
+            transform: scale(1);
         }
     }
 
+    i {
+        transform: rotate(90deg);
+        margin-right: 5px;
+    }
 }

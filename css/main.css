@@ -1,12 +1,12 @@
 @charset "UTF-8";
-.main-xs-nav a.Phone, .top-bar a.Phone {
+.Phone, .top-bar a.Phone {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   transition-property: color;
   transition-duration: 0.3s;
 }
-.main-xs-nav a.Phone:before, .top-bar a.Phone:before {
+.Phone:before, .top-bar a.Phone:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -28,10 +28,10 @@
   -webkit-transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
-.main-xs-nav a.Phone:hover, .top-bar a.Phone:hover {
+.Phone:hover, .top-bar a.Phone:hover {
   border-color: #565b6e;
 }
-.main-xs-nav a.Phone:hover:before, .top-bar a.Phone:hover:before {
+.Phone:hover:before {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
@@ -214,7 +214,7 @@ a:active {
     align-items: center;
     width: 100%;
     display: flex;
-    margin: 40px 0 25px;
+    margin: 15px 0 25px;
   }
   .sec-bar .logo img {
     width: 250px;
@@ -323,6 +323,8 @@ a:active {
 @media (max-width: 991px) {
   .footer-nav {
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -458,6 +460,9 @@ a:active {
 .main-xs-nav .droplinks li {
   margin-top: 8px;
 }
+.main-xs-nav .droplinks li a {
+  color: #888888;
+}
 .main-xs-nav .closebtn {
   position: absolute;
   top: 25px;
@@ -465,16 +470,32 @@ a:active {
   cursor: pointer;
   left: 0px;
   margin-left: 25px;
+  color: #a4a4a4;
 }
-.main-xs-nav a {
+.main-xs-nav .lang {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  font-family: roman-bold;
+  background-color: #565b6e;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Phone {
   color: #a0a0a0;
   font-size: 14px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-.main-xs-nav a.Phone {
   margin: 0 20px;
   background-color: #f3f3f3;
   padding: 0 24px 0 19px;
@@ -486,23 +507,20 @@ a:active {
   justify-content: center;
   margin-top: 30px;
 }
-.main-xs-nav a.Phone:before {
+.Phone:before {
   background: #f65456;
 }
-.main-xs-nav a.Phone:hover {
+.Phone:hover {
   border-color: #f65456;
   color: #fff;
 }
-.main-xs-nav a.Phone:hover:before {
+.Phone:hover:before {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-.main-xs-nav a.Phone i {
+.Phone i {
   transform: rotate(90deg);
   margin-right: 5px;
-}
-.main-xs-nav a:hover {
-  color: #f65456;
 }
 
 .catslider {
@@ -662,13 +680,16 @@ a:active {
   cursor: pointer;
   width: 100%;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 22px;
 }
 .foot .accordion:after {
   content: "+";
   color: #565b6e;
-  margin-left: 5px;
+  margin: 0 10px;
   font-size: 18px;
-  float: left;
 }
 .foot .accordion.active:after {
   content: "−";

@@ -180,17 +180,6 @@
     }
 }
 
-.foot {
-    .accordion {
-
-        &:after {
-            margin-right: 5px;
-            margin-left: 0;
-            float: right;
-        }
-    }
-}
-
 .xs-nav {
 
     .accordion {
@@ -224,6 +213,15 @@
         margin-left: 0;
         right: 0px;
         margin-right: 25px;
+    }
+
+    .lang {
+        left: 0px;
+        right: auto;
+        margin-left: 25px;
+        margin-right: 0;
+        line-height: 21px;
+        align-items: flex-start;
     }
 
     a {
