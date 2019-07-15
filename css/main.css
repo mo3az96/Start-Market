@@ -381,6 +381,8 @@ a:active {
 .copy .copyrights {
   color: #565b6e;
   font-size: 12px;
+}
+.copy .copyrights span {
   display: flex;
   align-items: center;
 }

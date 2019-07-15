@@ -21,7 +21,12 @@ $(document).ready(function () {
         $('.main-xs-nav').removeClass('inscreen');
         $('body').css("overflow", "auto");
     });
-
+    // Main Slider
+    if ($(window).width() < 769) {
+        $(".header-container").removeClass("container");
+    } else {
+        $(".header-container").addClass("container");
+    }
     // Main Slider
     $('.main-slider').owlCarousel({
         items: 1,
