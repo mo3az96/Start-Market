@@ -30,7 +30,7 @@ $(document).ready(function () {
     // Main Slider
     $('.main-slider').owlCarousel({
         items: 1,
-        autoplay: true,
+        autoplay: false,
         margin: 5,
         rtl: true,
         loop: true,

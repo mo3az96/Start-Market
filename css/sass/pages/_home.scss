@@ -108,9 +108,6 @@
         text-align: center;
 
         &:hover {
-            .product-img {
-                transform: scale(1.2);
-            }
 
             .product-name {
                 color: $seccolor;
@@ -136,6 +133,11 @@
         direction: ltr;
         display: block;
         color: $maincolor;
+        font-size: 16px;
+
+        @media (max-width: 577px) {
+            font-size: 14px;
+        }
 
         .old-price {
             margin-left: 10px;
