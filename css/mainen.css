@@ -13,20 +13,20 @@
     left: 15px;
   }
 }
-.sec-bar .cart .txt {
+.sec-bar .cart .cart-icon .txt {
   font-size: 13px;
-  margin-left: 5px;
   margin-right: 0;
+  margin-left: 5px;
+}
+.sec-bar .cart .cart-icon .count {
+  right: auto;
+  left: 15px;
 }
 @media (max-width: 577px) {
   .sec-bar .cart .menu-btn {
-    margin-left: 20px;
     margin-right: 0;
+    margin-left: 20px;
   }
-}
-.sec-bar .cart .count {
-  left: 15px;
-  right: auto;
 }
 
 .sec-bar .search {

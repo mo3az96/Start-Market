@@ -25,26 +25,32 @@
 
 
     .cart {
+        .cart-icon {
 
-        .txt {
-            font-size: 13px;
-            margin-left: 5px;
-            margin-right: 0;
-
-        }
-
-        .menu-btn {
-            @media(max-width: 577px) {
-                margin-left: 20px;
+            .txt {
+                font-size: 13px;
                 margin-right: 0;
+                margin-left: 5px;
+            }
+
+            .count {
+                right: auto;
+                left: 15px;
             }
 
         }
 
-        .count {
-            left: 15px;
-            right: auto;
+
+        .menu-btn {
+
+            @media(max-width: 577px) {
+                margin-right: 0;
+                margin-left: 20px;
+            }
+
         }
+
+
 
     }
 }

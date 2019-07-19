@@ -227,15 +227,53 @@ a:active {
   }
 }
 .sec-bar .cart {
-  position: relative;
-  color: #565b6e;
   display: flex;
   align-items: center;
+}
+.sec-bar .cart .cart-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #565b6e;
   font-size: 20px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.sec-bar .cart .cart-icon .txt {
+  font-family: roman-bold;
+  font-size: 14px;
+  margin-right: 5px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 991px) {
+  .sec-bar .cart .cart-icon .txt {
+    display: none;
+  }
+}
+.sec-bar .cart .cart-icon .count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f89128;
+  width: 16px;
+  height: 15px;
+  font-size: 11px;
+  color: #fff;
+}
+.sec-bar .cart .cart-icon:hover {
+  color: #f65456;
+}
+.sec-bar .cart .cart-icon:hover .count {
+  animation: vibe 0.7s;
 }
 .sec-bar .cart i {
   -moz-transition: all 0.3s ease-in-out;
@@ -252,40 +290,6 @@ a:active {
     font-size: 20px;
     margin-right: 20px;
   }
-}
-.sec-bar .cart .txt {
-  font-family: roman-bold;
-  font-size: 14px;
-  margin-right: 5px;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-@media (max-width: 991px) {
-  .sec-bar .cart .txt {
-    display: none;
-  }
-}
-.sec-bar .cart .count {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: #f89128;
-  width: 16px;
-  height: 15px;
-  font-size: 11px;
-  color: #fff;
-}
-.sec-bar .cart:hover {
-  color: #f65456;
-}
-.sec-bar .cart:hover .count {
-  animation: vibe 0.7s;
 }
 @media (max-width: 577px) {
   .sec-bar .cart {
