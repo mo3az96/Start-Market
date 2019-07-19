@@ -78,7 +78,8 @@
     }
 
     @media (max-width: 577px) {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .menu {
@@ -92,31 +93,23 @@
     }
 
     .logo {
+        @media (min-width: 578px) and (max-width: 991px) {
+            width: 65%;
+        }
+
         @media (max-width: 577px) {
             justify-content: space-between;
             align-items: center;
-            width: 100%;
+            width: 65%;
             display: flex;
             margin: 15px 0 25px;
 
             img {
-                width: 250px;
+                width: 100%;
             }
         }
 
-        .cart {
-            display: none;
 
-            @media (max-width: 577px) {
-                display: flex;
-                font-size: 20px;
-                margin: 0 20px;
-
-                .count {
-                    top: -8px;
-                }
-            }
-        }
     }
 
     .cart {
@@ -128,11 +121,24 @@
         @include transition(all 0.3s ease-in-out);
 
         @media(max-width: 577px) {
-            display: none;
+            display: flex;
+            font-size: 20px;
+            order: 2;
         }
 
         i {
             @include transition(all 0.3s ease-in-out);
+        }
+
+        .menu-btn {
+            display: none;
+
+            @media(max-width: 577px) {
+                display: flex;
+                font-size: 20px;
+                margin-right: 20px;
+            }
+
         }
 
         .txt {
