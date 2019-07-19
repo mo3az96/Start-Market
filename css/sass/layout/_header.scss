@@ -120,11 +120,6 @@
         font-size: 20px;
         @include transition(all 0.3s ease-in-out);
 
-        @media(max-width: 577px) {
-            display: flex;
-            font-size: 20px;
-            order: 2;
-        }
 
         i {
             @include transition(all 0.3s ease-in-out);
@@ -171,13 +166,24 @@
 
             color: $seccolor;
 
-            color: $seccolor;
-
-
-
             .count {
                 animation: vibe 0.7s;
             }
         }
+
+        @media(max-width: 577px) {
+            display: flex;
+            font-size: 20px;
+            order: 2;
+
+            &:hover {
+                color: $maincolor;
+
+                .count {
+                    animation: vibe 0.7s;
+                }
+            }
+        }
+
     }
 }

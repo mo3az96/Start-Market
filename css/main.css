@@ -237,13 +237,6 @@ a:active {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 577px) {
-  .sec-bar .cart {
-    display: flex;
-    font-size: 20px;
-    order: 2;
-  }
-}
 .sec-bar .cart i {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -290,10 +283,22 @@ a:active {
 }
 .sec-bar .cart:hover {
   color: #f65456;
-  color: #f65456;
 }
 .sec-bar .cart:hover .count {
   animation: vibe 0.7s;
+}
+@media (max-width: 577px) {
+  .sec-bar .cart {
+    display: flex;
+    font-size: 20px;
+    order: 2;
+  }
+  .sec-bar .cart:hover {
+    color: #565b6e;
+  }
+  .sec-bar .cart:hover .count {
+    animation: vibe 0.7s;
+  }
 }
 
 .foot {
