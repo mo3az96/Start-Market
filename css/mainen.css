@@ -20,7 +20,7 @@
 }
 .sec-bar .cart .cart-icon .count {
   right: auto;
-  left: 15px;
+  left: -5px;
 }
 @media (max-width: 577px) {
   .sec-bar .cart .menu-btn {
